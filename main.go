@@ -8,12 +8,6 @@ import (
 
 var router *gin.Engine
 
-type article struct {
-	ID      int    `json:"id"`
-	Title   string `json:"title"`
-	Content string `json:"content"`
-}
-
 func showIndexPage(c *gin.Context) {
 	c.HTML(
 		http.StatusOK,
