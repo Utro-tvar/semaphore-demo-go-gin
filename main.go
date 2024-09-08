@@ -13,5 +13,7 @@ func main() {
 
 	router.GET("/", showIndexPage)
 
+	router.GET("/article/view/:article_id", showArticle)
+
 	router.Run()
 }
