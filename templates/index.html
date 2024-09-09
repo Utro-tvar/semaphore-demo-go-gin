@@ -1,6 +1,6 @@
 {{ template "header.html" .}}
 
-{{ range .payloads }}
+{{ range .payload }}
     <a href="/article/view/{{ .ID }}">
         <h2>{{ .Title }}</h2>
     </a>

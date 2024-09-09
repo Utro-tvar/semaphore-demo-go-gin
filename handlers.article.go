@@ -13,8 +13,8 @@ func showIndexPage(c *gin.Context) {
 		http.StatusOK,
 		"index.html",
 		gin.H{
-			"title":    "Home Page",
-			"payloads": articles,
+			"title":   "Home Page",
+			"payload": articles,
 		},
 	)
 }
